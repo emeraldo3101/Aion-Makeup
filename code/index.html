@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <title>AION Makeup</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html"><img id="navlogosize" src="images/aionlogo.png" alt="AION Makeup logo"></a>
+        </div>
+        <div class="navlinks">
+                
+            <sl-tab disabled>About Nerida</sl-tab>
+          
+            <button onclick="myFunction()" class="dropbtn">Products</button> 
+                <!--https://www.w3schools.com/howto/howto_js_dropdown.asp-->
+            <sl-avatar label="User avatar"></sl-avatar>
+            <a href="#"> <img  id="cart" src="images/cart.png" alt="cart-icon"></a>
+        </div>
+        <div id="myDropdown" class="dropdown-content">
+            <!--<a href="/Users/emera/Documents/Web Design 2/Assessment 3/Lay_20927396-A3-Final_Website_ Application/pages/face.html">Face</a>-->
+            <sl-tab disabled>Face (coming soon!)</sl-tab>
+            <sl-tab disabled>Lips (coming soon!)</sl-tab>
+            <sl-tab disabled>Eyes (coming soon!)</sl-tab>
+        </div>
+    </nav>
+    <section class="section">
+    <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img  class="advert" src="images/ad.png" alt="advertisment lady putting on foundation" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img class="advert" src="images/ad1.png" alt="advertisement eye makeup pearlescent" style="width:100%">
+    </div>
+  
+    <div class="mySlides fade">
+      <img class="advert" src="images/ad2.png" alt="advertisement lady with lipstick and compact pink" style="width:100%">
+    </div>
+    <div class="sl-button">
+      <sl-icon-button class="sl-button" style="color: #ffffff;font-size: 10vw;" name="chevron-down" label="chevron-down"></sl-icon-button>
+    </div>
+    </section>
+
+    <section class="section" class="section2">
+      <div>
+        <img class=backgroundwaves src="images/SVG/Asset 2.svg">
+      </div>
+         <div class="box">
+            <div class="column1">
+            <img class="nerida1" src="images/nerida1.png" alt="image of makeup artist nerida focusing on a client's makeup"> <!--Image of Nerida-->
+            </div>
+            <div class="column2">
+            <p class="aionsummary"> 
+              AION was created in 2021 by Nerida Diamandis,
+              to celebrate the glow of all women and serve a vision of 
+              glamour and individuality to each and every lady. Our Water-glow-foundation has landed a place in
+              Australian Vogue's 2023 'Top 10 foundations', also winning multiple awards. With an increasing demand from our clients,we will expand our reach from Sephora to our
+              website! We will release our full line of products in March 2024, so stay tuned! 
+            </p>
+            </div>
+          </div>
+    </section>
+    
+
+    <section class="section" id="review-carousel">
+      <div>
+        <img id=backgroundwaves2 src="images/SVG/SVG/Layer 2-2.svg">
+      </div>
+          <div id="carousel-size">
+            <sl-carousel autoplay loop navigation>
+                <sl-carousel-item>
+                  <div class="img-size">
+                  <a data-fslightbox="review-gallery" href="images/review.png"><img class="sl-image" src="images/review.png" alt="review">
+                  </a>
+                  </div>
+                </sl-carousel-item>
+                <sl-carousel-item>
+                  <div class="img-size">
+                    <a data-fslightbox="review-gallery" href="images/review–1.png"><img class="sl-image" src="images/review–1.png" alt="review">
+                    </a>
+                  </div>
+                </sl-carousel-item>
+                <sl-carousel-item>
+                  <div class="img-size">
+                    <a data-fslightbox="review-gallery" href="images/review–2.png"><img class="sl-image" src="images/review–2.png" alt="review">
+                    </a>
+                  </div>
+                </sl-carousel-item>
+                
+              </sl-carousel>
+        </div>
+          
+    </section>
+    <section>
+      
+      <!--wave svg animation and visuals: https://www.cssscript.com/animated-waves-svg/--> 
+        <div class="header">
+          <!--Waves Container-->
+          <div>
+              <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                  <defs>
+                      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                  </defs>
+                  <g class="parallax">
+                      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0, 206, 209,0.7)"></use>
+                      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"></use>
+                      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"></use>
+                      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fafafa"></use>
+                  </g>
+              </svg>
+          </div>
+          <!--Waves end-->
+          
+        </div>
+    </section>
+    <footer>
+      <div id="footer-items">
+        <a href="index.html"><img id="footerlogosize" class="footerlinks"src="images/aionlogo.png" alt="AION Makeup logo"></a>
+        <a href="#" class="footerlinks">Legal Stuff</a>
+        <a href="#" class="footerlinks">Privacy Policy</a>
+        <a href="#" class="footerlinks">Security</a>
+      </div>
+    </footer>
+    
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace-autoloader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/fslightbox.js"></script>
+    <script src="js/main.js"></script>
+   
+    
+</body>
+</html>
+
